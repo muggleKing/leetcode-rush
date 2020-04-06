@@ -41,4 +41,24 @@ public:
         
         return res;
     }
+
+    /*------ hashmap one timeß ------*/
+    vector<int> twoSum3(vector<int>& nums, int target) {
+        int ss = nums.size();
+        map<int, int> hashmap;
+        vector<int> res{};        
+        map<int, int>::iterator iter;  
+        for(int i = 0;i<ss;i++)
+        {
+            iter = hashmap.find(target - nums[i]);
+            if(iter!=hashmap.end() && iter->second!=i){
+                res.push_back(iter->second);
+                res.push_back(i);
+                return res;
+            }
+            hashmap[nums[i]] = i;
+        }
+        
+        return res;
+    }
 };
