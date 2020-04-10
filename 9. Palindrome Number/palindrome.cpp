@@ -1,3 +1,12 @@
+#include <stdio.h>
+#include <vector>
+#include <map>
+#include <string>
+#include <iostream>
+#include <unordered_set>
+
+using namespace::std;
+
 class Solution {
 public:
       bool isPalindrome(int x) {
@@ -9,7 +18,8 @@ public:
 
         if(ss == 1)
             return true;
-
+            
+        int left = 0, right = ss-1;
         while(left<=right){
             if(s[left]!=s[right])
                 return false;
