@@ -1,3 +1,11 @@
+#include <stdio.h>
+#include <vector>
+#include <map>
+#include <string>
+#include <unordered_set>
+
+using namespace::std;
+
 class Solution {
 public:
     int reverse(int x)
