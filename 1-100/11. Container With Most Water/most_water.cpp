@@ -19,18 +19,30 @@ public:
         int down = min(height[left], height[right]);
         int res = down * (right - left);
         while(left < right){
-            while(height[left]<=down && left < right){
+            down = min(height[left], height[right]);
+            res = max(res, down * (right - left));
+            if(height[left] < height[right])
                 left++;
-            }
-            down = min(height[left], height[right]);
-            res = max(res, down * (right - left));
-
-
-            while(height[right]<=down && left < right){
+            else
                 right--;
-            }
+        }
+        return res;
+    }
+
+    int maxArea2(vector<int>& height) {
+        int ss, left, right;
+        ss = height.size();
+        left = 0;
+        right = ss - 1;
+        int down = min(height[left], height[right]);
+        int res = down * (right - left);
+        while (left < right) {
             down = min(height[left], height[right]);
             res = max(res, down * (right - left));
+            if (height[left] < height[right])
+                left++;
+            else
+                right--;
         }
         return res;
     }
