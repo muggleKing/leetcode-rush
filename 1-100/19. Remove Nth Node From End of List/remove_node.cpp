@@ -10,15 +10,6 @@ using namespace::std;
 #define min(x,y)  (x<y?x:y);
 #define max(x,y)  (x<y?y:x);
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
-
  struct ListNode {
      int val;
      ListNode *next;

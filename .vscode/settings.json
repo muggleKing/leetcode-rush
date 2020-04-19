@@ -2,6 +2,7 @@
     "files.associations": {
         "vector": "cpp",
         "locale": "cpp",
-        "__config": "cpp"
+        "__config": "cpp",
+        "queue": "cpp"
     }
 }
