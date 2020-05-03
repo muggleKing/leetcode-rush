@@ -3,6 +3,7 @@
         "vector": "cpp",
         "locale": "cpp",
         "__config": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "algorithm": "cpp"
     }
 }
